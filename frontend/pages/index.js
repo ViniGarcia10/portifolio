@@ -34,7 +34,7 @@ export default function Home() {
           <p className={styles.descriptionAbout}>
             Sou Vinícius Garcia, desenvolvedor de softwares
             <br /> com alta performance, sempre buscando aprender
-            <br /> novas tecnologias para agregar aos meus trabalho.
+            <br /> novas tecnologias para agregar aos meus trabalhos.
           </p>
         </section>
       </main>
