@@ -7,7 +7,7 @@ export default function index() {
       <Title>Olá, Eu Sou Vinícius</Title>
       <Description>
         Desenvolvedor web, trabalho na criação sites e sistemas de alta
-        eficiência.
+        eficiência. :)
       </Description>
     </Main>
   );
