@@ -1,45 +1,44 @@
 import Head from "next/head";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import styles from "../styles/Home.module.css";
-import Projects from "./projects";
-import Contact from "./contact";
-import About from "./about";
+import Welcome from "../components/mainWelcome";
+import About from "../components/about";
+import styled from "styled-components";
+import Projects from "../components/projects";
+
+const Container = styled.div`
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Main = styled.main`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Header />
-
+    <Container>
       <Head>
         <title>Viniix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <section className={styles.homeBanner}>
-          <h1 className={styles.title}>Olá, Eu Sou Vinícius</h1>
-          <h2 className={styles.descriptionTitle}>
-            Desenvolvedor web, trabalho na criação sites e sistemas de alta
-            eficiência.
-          </h2>
-        </section>
+      <Header />
 
-        <section className={styles.About}>
-          <img
-            className={styles.avatar}
-            src="./avatar.png"
-            alt="Vinícius Garcia Leão"
-          />
-          <p className={styles.descriptionAbout}>
-            Sou Vinícius Garcia, desenvolvedor de softwares
-            <br /> com alta performance, sempre buscando aprender
-            <br /> novas tecnologias para agregar aos meus trabalho.
-          </p>
-        </section>
-      </main>
+      <Main>
+        <Welcome />
+        <About />
+        <Projects />
+      </Main>
 
       <Footer />
-    </div>
+    </Container>
   );
 }

@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 html,
 body {
-    background: #1ccffc2e;
+    background: url("../public/fundo-page.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     padding: 0;
     margin: 0;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-@media only screen and (max-width: 767px) {
-    body {
-        min-width: 768px;
-    }
 }
 
 a {
